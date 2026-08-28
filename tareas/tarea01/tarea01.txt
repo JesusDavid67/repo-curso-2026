@@ -1,0 +1,45 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260827214459
+Nombre de usuario: JESUS\jesus
+Usuario RunAs: JESUS\jesus
+Nombre de la configuración: 
+Máquina: JESUS (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 14752
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es .\tareas\tarea01\tarea01.txt
+PS C:\Users\jesus\Documents\repo-curso-2026> bash
+
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+$ man uniq
+bash: man: command not found
+
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+$ sort combined.txt | less
+
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+$ sort combined.txt | uniq | wc -l
+4
+
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+$ ^C
+
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+$ exit
+exit
+PS C:\Users\jesus\Documents\repo-curso-2026> ErrorTerminación(): "Se ha detenido la canalización."
+>> ErrorTerminación(): "Se ha detenido la canalización."
+PS C:\Users\jesus\Documents\repo-curso-2026> exit
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260827221209
+**********************

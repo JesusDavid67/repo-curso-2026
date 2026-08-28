@@ -1,0 +1,13 @@
+another
+dir1
+dir2
+dir3
+dir4
+folder
+folder 1
+folder 2
+folder 3
+folder 4
+folder 5
+folder 6
+output.txt
