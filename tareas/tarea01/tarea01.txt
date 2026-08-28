@@ -1,4 +1,4 @@
-﻿**********************
+**********************
 Inicio de la transcripción de Windows PowerShell
 Hora de inicio: 20260827214459
 Nombre de usuario: JESUS\jesus
@@ -17,24 +17,458 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 La transcripción ha comenzado. El archivo de salida es .\tareas\tarea01\tarea01.txt
-PS C:\Users\jesus\Documents\repo-curso-2026> bash
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026 (main)
+$ pwd
+/c/Users/jesus/Documents/repo-curso-2026
 
-jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026 (main)
+$ pwd
+/c/Users/jesus/Documents/repo-curso-2026
+
+jesus@JESUS MINGW64 ~/Documents/repo-curso-2026 (main)
+$ cd /
+
+jesus@JESUS MINGW64 /
+$ pwd
+/
+
+jesus@JESUS MINGW64 /
+$ cd home
+bash: cd: home: No such file or directory
+
+jesus@JESUS MINGW64 /
+$ pwd
+/
+
+jesus@JESUS MINGW64 /
+$ cd ..
+
+jesus@JESUS MINGW64 /
+$ pwd
+/
+
+jesus@JESUS MINGW64 /
+$ cd
+
+jesus@JESUS MINGW64 ~
+$ pwd
+/c/Users/jesus
+
+jesus@JESUS MINGW64 ~
+$ cd ../..
+
+jesus@JESUS MINGW64 /c
+$ cd
+
+jesus@JESUS MINGW64 ~
+$ pwd
+/c/Users/jesus
+
+jesus@JESUS MINGW64 ~
+$ cd ../../etc
+bash: cd: ../../etc: No such file or directory
+
+jesus@JESUS MINGW64 ~
+$ pwd
+/c/Users/jesus
+
+jesus@JESUS MINGW64 ~
+$ cd /
+
+jesus@JESUS MINGW64 /
+$ cd etc
+
+jesus@JESUS MINGW64 /etc
+$ pwd
+/etc
+
+jesus@JESUS MINGW64 /etc
+$ cd
+
+jesus@JESUS MINGW64 ~
+$ pwd
+/c/Users/jesus
+
+jesus@JESUS MINGW64 ~
+$ cd etc
+bash: cd: etc: No such file or directory
+
+jesus@JESUS MINGW64 ~
+$ cd /etc
+
+jesus@JESUS MINGW64 /etc
+$ pwd
+/etc
+
+jesus@JESUS MINGW64 /etc
+$ whoami
+jesus
+
+jesus@JESUS MINGW64 /etc
+$ pwd
+/etc
+
+jesus@JESUS MINGW64 /etc
+$ cd ~
+
+jesus@JESUS MINGW64 ~
+$ pwd
+/c/Users/jesus
+
+jesus@JESUS MINGW64 ~
+$ cd ~/Desktop
+
+jesus@JESUS MINGW64 ~/Desktop
+$ pwd
+/c/Users/jesus/Desktop
+
+jesus@JESUS MINGW64 ~/Desktop
+$ mkdir /tmp/tutorial
+mkdir: cannot create directory ‘/tmp/tutorial’: File exists
+
+jesus@JESUS MINGW64 ~/Desktop
+$ cd /tmp/tutorial
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir dir1 dir2 dir3
+mkdir: cannot create directory ‘dir1’: File exists
+mkdir: cannot create directory ‘dir2’: File exists
+mkdir: cannot create directory ‘dir3’: File exists
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cd /etc ~/Desktop
+bash: cd: too many arguments
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ another/  'another folder'/   dir1/   dir2/   dir3/   dir4/   file_list.txt   folder/   output.txt   test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir -p dir4/dir5/dir6
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ another/  'another folder'/   dir1/   dir2/   dir3/   dir4/   file_list.txt   folder/   output.txt   test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cd dir4
+
+jesus@JESUS MINGW64 /tmp/tutorial/dir4
+$ ls
+dir5/
+
+jesus@JESUS MINGW64 /tmp/tutorial/dir4
+$ cd dir5
+
+jesus@JESUS MINGW64 /tmp/tutorial/dir4/dir5
+$ ls
+dir6/
+
+jesus@JESUS MINGW64 /tmp/tutorial/dir4/dir5
+$ cd ../..
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir --parents --verbose dir4/dir5
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir -p --verbose dir4/dir5
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir -p -v dir4/dir5
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir -pv dir4/dir5
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir another folder
+mkdir: cannot create directory ‘another’: File exists
+mkdir: cannot create directory ‘folder’: File exists
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ another/  'another folder'/   dir1/   dir2/   dir3/   dir4/   file_list.txt   folder/   output.txt   test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir "folder 1"
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir 'folder 2'
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir folder\ 3
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir "folder 4" "folder 5"
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mkdir -p "folder 6"/"folder 7"
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ another/           dir1/   dir3/   file_list.txt  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+'another folder'/   dir2/   dir4/   folder/        'folder 2'/  'folder 4'/  'folder 6'/   test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ another/           dir1/   dir3/   file_list.txt  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+'another folder'/   dir2/   dir4/   folder/        'folder 2'/  'folder 4'/  'folder 6'/   test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls > output.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat output.txt
+another/
+another folder/
+dir1/
+dir2/
+dir3/
+dir4/
+file_list.txt
+folder/
+folder 1/
+folder 2/
+folder 3/
+folder 4/
+folder 5/
+folder 6/
+output.txt
+test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat
+cat
+cat
+
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "This is a test"
+This is a test
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "This is a test" > test_1.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "This is a second test" > test_2.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "This is a third test" > test_3.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ another/           dir1/   dir3/   file_list.txt  'folder 1'/  'folder 3'/  'folder 5'/   output.txt   test_2.txt
+'another folder'/   dir2/   dir4/   folder/        'folder 2'/  'folder 4'/  'folder 6'/   test_1.txt   test_3.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat test_1.txt test_2.txt test_3.txt
+This is a test
+This is a second test
+This is a third test
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat test_1.txt test_2.txt test_3.txt
+This is a test
+This is a second test
+This is a third test
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat test_?.txt
+This is a test
+This is a second test
+This is a third test
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat test_*
+This is a test
+This is a second test
+This is a third test
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat t* > combined.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat t* >> combined.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "I've appended a line!" >> combined.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat combined.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+I've appended a line!
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ less combined.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "Lower case" > a.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "Upper case" > A.TXT
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ echo "Mixed case" > A.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv combined.txt dir1
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls dir1
+combined.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv combined.txt dir1
+mv: cannot stat 'combined.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv combined.txt test_* dir3 dir2
+mv: cannot stat 'combined.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ a.txt     'another folder'/   dir2/   file_list.txt  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+ another/   dir1/              dir4/   folder/        'folder 2'/  'folder 4'/  'folder 6'/
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv dir2/combined.txt dir4/dir5/dir6
+mv: cannot stat 'dir2/combined.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls dir2
+dir3/  test_1.txt  test_2.txt  test_3.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cp dir4/dir5/dir6/combined.txt .+
+cp: cannot stat 'dir4/dir5/dir6/combined.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls dir4/dir5/dir6
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cp combined.txt backup_combined.txt
+cp: cannot stat 'combined.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ a.txt     'another folder'/   dir2/   file_list.txt  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+ another/   dir1/              dir4/   folder/        'folder 2'/  'folder 4'/  'folder 6'/
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv backup_combined.txt combined_backup.txt
+mv: cannot stat 'backup_combined.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ a.txt     'another folder'/   dir2/   file_list.txt  'folder 1'/  'folder 3'/  'folder 5'/   output.txt
+ another/   dir1/              dir4/   folder/        'folder 2'/  'folder 4'/  'folder 6'/
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv "folder 1" folder_1
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv "folder 2" folder_2
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv "folder 3" folder_3
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv "folder 4" folder_4
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv "folder 5" folder_5
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ mv "folder 6" folder_6
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ a.txt     'another folder'/   dir2/   file_list.txt   folder_1/   folder_3/   folder_5/   output.txt
+ another/   dir1/              dir4/   folder/         folder_2/   folder_4/   folder_6/
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ rm dir4/dir5/dir6/combined.txt combined_backup.txt
+rm: cannot remove 'dir4/dir5/dir6/combined.txt': No such file or directory
+rm: cannot remove 'combined_backup.txt': No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ rm folder_*
+rm: cannot remove 'folder_1': Is a directory
+rm: cannot remove 'folder_2': Is a directory
+rm: cannot remove 'folder_3': Is a directory
+rm: cannot remove 'folder_4': Is a directory
+rm: cannot remove 'folder_5': Is a directory
+rm: cannot remove 'folder_6': Is a directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ rmdir folder_*
+rmdir: failed to remove 'folder_6': Directory not empty
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ rm -r folder_6
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls
+ a.txt   another/  'another folder'/   dir1/   dir2/   dir4/   file_list.txt   folder/   output.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ wc -l combined.txt
+wc: combined.txt: No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls ~ > file_list.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ wc -l file_list.txt
+34 file_list.txt
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls ~ | wc -l
+34
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls /etc|wc -l
+26
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ ls /etc | less
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat combined.txt | uniq | wc -l
+cat: combined.txt: No such file or directory
+0
+
+jesus@JESUS MINGW64 /tmp/tutorial
+$ cat combined.txt | uniq | less
+cat: combined.txt: No such file or directory
+
+jesus@JESUS MINGW64 /tmp/tutorial
 $ man uniq
 bash: man: command not found
 
-jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+jesus@JESUS MINGW64 /tmp/tutorial
 $ sort combined.txt | less
+sort: cannot read: combined.txt: No such file or directory
 
-jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
+jesus@JESUS MINGW64 /tmp/tutorial
 $ sort combined.txt | uniq | wc -l
-4
-
-jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
-$ ^C
-
-jesus@JESUS MINGW64 ~/Documents/repo-curso-2026/tareas/tarea01/tutorial (main)
-$ exit
+sort: cannot read: combined.txt: No such file or directory
+0
 exit
 PS C:\Users\jesus\Documents\repo-curso-2026> ErrorTerminación(): "Se ha detenido la canalización."
 >> ErrorTerminación(): "Se ha detenido la canalización."
